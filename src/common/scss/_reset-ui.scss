@@ -1,0 +1,53 @@
+// .layui-tab-item {
+//   position: absolute;
+//   top: 41px;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   padding: 0;
+//   margin: 0;
+// }
+.layui-tab-item.layui-show {
+  animation:moveTop 1s;
+}
+@keyframes moveTop{
+  0% {opacity: 0;-webkit-transform: translateY(20px);-ms-transform: translateY(20px);transform: translateY(20px);}
+  100% {opacity: 1;-webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0);}
+}
+
+.layui-btn {
+  background-color: #1E9FFF;
+}
+
+.layui-btn-green {
+  background-color: #5FB878;
+}
+.layui-btn-danger {
+    background-color: #FF5722;
+}
+.layui-btn-primary {
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555;
+}
+
+.layui-nav-tree .layui-nav-bar {
+    width: 5px;
+    height: 0;
+    background-color: #5FB878;
+}
+.layui-nav-tree .layui-nav-child a {
+    text-indent: 20px;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    background-color: #5FB878;
+    color: #fff;
+    text-indent: 30px;
+}
+
+.layui-table-page .layui-laypage {
+    width: 100%;
+}
+.layui-table-page .layui-laypage-count {
+    float: right;
+}

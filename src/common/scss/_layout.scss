@@ -1,0 +1,74 @@
+.layui-layout-admin .header{
+  height: 55px;
+  border-bottom: 5px solid #1E9FFF;
+  background-color: #393D49;
+  color: #fff;
+}
+.header .layui-nav{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  background:none;
+}
+
+.header .logo{
+  font-size: 18px;
+  color: #fff;
+  line-height: 60px;
+}
+
+.layui-layout-admin .layui-side{
+  top: 60px;
+}
+
+/*iframe内样式*/
+
+.x-body{
+  padding: 20px;
+}
+.x-nav{
+  padding-left: 20px;
+  position: relative;
+  z-index: 99;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 39px;
+  height: 39px;
+  overflow: hidden;
+}
+.x-page-reload {
+  float: right;
+}
+.x-toggle-side{
+  width: 17px;
+  height: 61px;
+  background:  url(../images/icon.png) 0 0 no-repeat;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.layui-layout-admin .content-wrapper{
+  bottom: 82px; 
+  top: 117px;
+  padding: 0;
+  height: 100%;
+}
+.layui-tab-item{
+  height: 100%;
+}
+.x-iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.x-main{
+  position: fixed;
+  left: 200px;
+  right: 0;
+  top: 50px;
+  height: 100%;
+  border-left: 0px;
+}
