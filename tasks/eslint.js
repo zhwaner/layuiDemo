@@ -1,9 +1,9 @@
 const gulp = require('gulp')
 const eslint = require('gulp-eslint') // https://github.com/adametry/gulp-eslint
-
+// 配置.eslintrc.js文件
 let task = {
   run (path, cb) {
-    gulp.src([path, '!node_modules/**', '!./src/lib/**'])
+    gulp.src([path, '!node_modules/**', '!./src/lib/**']) // 排除
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.result(result => {

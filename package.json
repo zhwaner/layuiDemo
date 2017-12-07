@@ -4,13 +4,20 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dll": "webpack --config ./webpack.dll.conf.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "cssnano": "^3.10.0",
+    "es3ify-webpack-plugin": "0.0.1",
+    "es6-promise": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "glob": "^7.1.2",
     "gulp": "^3.9.1",
     "gulp-eslint": "^4.0.0",
@@ -23,6 +30,15 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^2.3.2",
-    "gulp-tmod": "^2.0.3"
+    "gulp-tmod": "^2.0.3",
+    "schema-utils": "^0.4.2",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "console-polyfill": "^0.3.0",
+    "core-js": "^2.5.1",
+    "es5-shim": "^4.5.9",
+    "es6-promise": "^4.1.1"
   }
 }
