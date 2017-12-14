@@ -22,13 +22,14 @@ const config = {
 }
 
 let task = {
-  run (handlePath) {
+  run (handlePath, cb) {
     glob.sync(handlePath).forEach(path => { // glob.sync同步获取匹配文件列表，异步是通过函数回调返回文件路径
       let pathArr = path.split('/')
       let dirname = pathArr[pathArr.length - 2]
 
       gulp.src(path)
       .on('end', () => {
+        cb && cb()
         console.log(`css task done!`)
       })
       .pipe(plumber({ errHandler: notify.onError('Error: <%=error.message %>') }))

@@ -1,9 +1,10 @@
 const glob = require('glob')
 const webpack = require('webpack')
+const chalk = require('chalk')
 
 let task = {
   run (path, cb) {
-    var config = require('./../webpack.config.js')
+    var config = require('./../webpack.config')
     var getEntry = function () {
       let entry = {}
       glob.sync(path).forEach(name => {
@@ -19,7 +20,7 @@ let task = {
       if (err) {
         console.log(err)
       }
-      console.log(`webpack done!`)
+      console.log(chalk.green(`webpack done!`))
       cb && cb()
     })
   }

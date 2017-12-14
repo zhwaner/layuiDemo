@@ -22,12 +22,13 @@ const minOptions = {
 }
 
 let task = {
-  run (handlePath) {
+  run (handlePath, cb) {
     console.log(glob.sync(handlePath))
     glob.sync(handlePath).forEach(path => {
       let pageName = path.split('/').pop().split('.')[0]
       gulp.src(path)
         .on('end', () => {
+          cb && cb()
           console.log(`html task ${pageName} done!`)
         })
         .pipe(fileInclude({

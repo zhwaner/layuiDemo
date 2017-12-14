@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "es3ify-webpack-plugin": "0.0.1",
     "es6-promise": "^4.1.1",
@@ -31,6 +32,7 @@
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^2.3.2",
     "gulp-tmod": "^2.0.3",
+    "http-proxy-middleware": "^0.17.4",
     "schema-utils": "^0.4.2",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "webpack": "^3.10.0"

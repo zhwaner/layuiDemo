@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=yes,minimum-scale=1,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+  <title>首页</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="lib/layui/css/layui.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header header">
+      <div class="layui-main">
+        <a class="logo" href="#" target="_blank">奇化网危化品监管系统</a>
+        <ul class="layui-nav" lay-filter="">
+          <li class="layui-nav-item">
+            <a href="javascript:;">admin</a>
+            <dl class="layui-nav-child">
+              
+              <dd>
+                <a href="">个人信息</a>
+              </dd>
+              <dd>
+                <a href="">切换帐号</a>
+              </dd>
+              <dd>
+                <a href="">退出</a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="/">前台首页</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="layui-side layui-bg-black x-side">
+      <div class="layui-side-scroll">
+        <ul class="layui-nav layui-nav-tree" lay-filter="side">
+        </ul>
+      </div>
+    </div>
+    <div class="layui-tab layui-tab-card x-main" lay-filter="x-tab" lay-allowclose="true">
+      <div class="x-toggle-side"></div>
+      <ul class="layui-tab-title">
+        <li class="layui-this">我的桌面</li>
+      </ul>
+      <div class="layui-tab-content content-wrapper">
+        <div class="layui-tab-item layui-show">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="lib/layui/layui.js"></script>
+<script src="js/dll.js"></script>
+<script src="js/index.js"></script>
+</html>
